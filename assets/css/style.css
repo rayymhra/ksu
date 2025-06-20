@@ -13,3 +13,49 @@ body {
 .our-brand-section {
     background-color: #CB423F;
 }
+
+.produk-unggulan-section {
+    background-color: #F7F0E7;
+}
+
+.gallery-section {
+    background-color: #F7F0E7;
+}
+
+.faq-section .card-body {
+    background-color: #F7F0E7;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #CB423F;
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: #CB423F 2px solid;
+    font-weight: 500;
+}
+
+.accordion-button{
+    font-weight: 500;
+}
+
+.accordion-button:hover {
+    color: #CB423F;
+
+}
+
+.produk-terlaris-section {
+    background-color: #F7F0E7;
+}
+
+.produk-terlaris-section  i{
+    font-size: 20px;
+}
+
+footer {
+    background-color: #CB423F;
+}
