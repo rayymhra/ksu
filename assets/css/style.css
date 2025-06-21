@@ -1,9 +1,104 @@
+/* GOTHAM FONTS */
+/* Book (normal 400) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/font/gotham-family/Gotham/Gotham-Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Book Italic */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/font/gotham-family/Gotham/Gotham-BookItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Light (300) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/font/gotham-family/Gotham/Gotham-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/font/gotham-family/Gotham/Gotham-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Medium (500) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/font/gotham-family/Gotham/Gotham-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/font/gotham-family/Gotham/Gotham-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Bold (700) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/font/gotham-family/Gotham/Gotham-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/font/gotham-family/Gotham/Gotham-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Black (800) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/font/gotham-family/Gotham/Gotham-Black.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Black Italic */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/font/gotham-family/Gotham/Gotham-BlackItalic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
 body {
+    font-family: 'Gotham', sans-serif;
     background-color: #FDFBFB !important;
 }
 
 .navbar {
     background-color: white !important;
+}
+
+.nav-item {
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.nav-item:hover {
+    border-bottom: #CB423F 3px solid;
+    /* font-weight: 600; */
+    text-shadow: 0 0 0.5px currentColor, 0 0 0.5px currentColor;
 }
 
 .hero-section {
@@ -58,4 +153,40 @@ body {
 
 footer {
     background-color: #CB423F;
+}
+
+
+/* auto slider for our brand section */
+.brand-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.brand-track {
+  display: flex;
+  animation: scrollBrands 30s linear infinite;
+  width: max-content;
+}
+
+.brand-track img {
+  width: 200px;
+  margin: 0 30px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* Scrolling Keyframes (continuous scroll) */
+@keyframes scrollBrands {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+
+.brand-slider:hover .brand-track {
+  animation-play-state: paused;
 }
