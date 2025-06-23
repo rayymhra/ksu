@@ -75,11 +75,11 @@
         <img src="assets/Media PNG (KERAJI)-02.png" alt="Keraji" />
         <img src="assets/Media PNG-01.png" alt="Brand 2" />
         <img src="assets/Media PNG (tujukreavi)-02.png" alt="Tujukreavi" />
-
+        
         <img src="assets/Media PNG (KERAJI)-02.png" alt="Keraji" />
         <img src="assets/Media PNG-01.png" alt="Brand 2" />
         <img src="assets/Media PNG (tujukreavi)-02.png" alt="Tujukreavi" />
-
+        
         <img src="assets/Media PNG (KERAJI)-02.png" alt="Keraji" />
         <img src="assets/Media PNG-01.png" alt="Brand 2" />
         <img src="assets/Media PNG (tujukreavi)-02.png" alt="Tujukreavi" />
@@ -88,20 +88,21 @@
   </div>
 </div>
 
-
-
 <div class="featured-video-section py-5">
   <div class="container">
     <div class="row">
-      <div class="col-8">
-        <h5>Camilan lezat & layanan kreatif dalam satu rumah</h5>
-        <p>
-          Rumah KSU adalah holding company asal Cileungsi yang menaungi
-          brand camilan seperti Keraji dan Kaki Lima, serta layanan agensi
-          desain melalui Tuju Kreavi. Sejak 2004, kami fokus pada kualitas
-          dan kreativitas untuk menghadirkan produk dan layanan terbaik.
-        </p>
+      <div class="col-7">
+        <div class="text-video">
+          <h5>Camilan lezat & layanan kreatif dalam satu rumah</h5>
+          <p>
+            Rumah KSU adalah holding company asal Cileungsi yang menaungi
+            brand camilan seperti Keraji dan Kaki Lima, serta layanan agensi
+            desain melalui Tuju Kreavi. Sejak 2004, kami fokus pada kualitas
+            dan kreativitas untuk menghadirkan produk dan layanan terbaik.
+          </p>
+        </div>
       </div>
+      <div class="col-1"></div>
       <div class="col-4">
         <video src="assets/video-chips.mp4" controls class="w-100 rounded-3"></video>
       </div>
@@ -157,27 +158,70 @@
   </div>
 </div>
 
-<div class="testimonials-section py-5">
+<div class="testimonials-section py-5 position-relative">
   <div class="container">
     <h2 class="border-bottom border-danger border-3 pb-1">Apa kata mereka?</h2>
-    <div class="row mt-3">
-      <div class="col-6">
-        <div class="card rounded-4">
-          <div class="card-body">
-            <img src="assets/review.jpeg" alt="" class="w-100 border rounded">
+    
+    <div id="testimonialCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-5">
+              <div class="card rounded-4">
+                <div class="card-body">
+                  <img src="assets/review.jpeg" alt="" class="w-100 border rounded">
+                </div>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="card rounded-4">
+                <div class="card-body">
+                  <img src="assets/review.jpeg" alt="" class="w-100 border rounded">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-5">
+              <div class="card rounded-4">
+                <div class="card-body">
+                  <img src="assets/review.jpeg" alt="" class="w-100 border rounded">
+                </div>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="card rounded-4">
+                <div class="card-body">
+                  <img src="assets/review.jpeg" alt="" class="w-100 border rounded">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
-      <div class="col-6">
-        <div class="card rounded-4">
-          <div class="card-body">
-            <img src="assets/review.jpeg" alt="" class="w-100 border rounded">
-          </div>
-        </div>
+      
+      <!-- Custom Controls (outside the images) -->
+      <div class="custom-carousel-controls">
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <!-- <span class="visually-hidden">Sebelumnya</span> -->
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <!-- <span class="visually-hidden">Berikutnya</span> -->
+        </button>
       </div>
     </div>
   </div>
 </div>
+
 
 <div class="gallery-section py-5">
   <div class="container">
@@ -285,18 +329,18 @@
           <div class="card-body rounded-3">
             <div class="text-center mt-3 mb-5">
               <!-- <h4 class="border-bottom border-secondary pb-1 border-3 d-inline">Tentang Rumah KSU</h4> -->
-              <h4 class="text-danger ">Tentang Rumah KSU</h4>
+              <h4 class="text-danger ">Tentang Produk Rumah KSU</h4>
             </div>
             
             <div class="faq-white m-1">
-              <div class="accordion m-1" id="faqAccordion">
+              <div class="accordion m-1" id="faqAccordion-r">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="true" aria-controls="faq10">
                       What is your return policy?
                     </button>
                   </h2>
-                  <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div id="faq10" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion-r">
                     <div class="accordion-body">
                       We offer a 30-day return policy for all unused items in their original packaging.
                     </div>
@@ -304,11 +348,11 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq20" aria-expanded="false" aria-controls="faq20">
                       How long does shipping take?
                     </button>
                   </h2>
-                  <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div id="faq20" class="accordion-collapse collapse" data-bs-parent="#faqAccordion-r">
                     <div class="accordion-body">
                       Shipping typically takes 3-5 business days for domestic orders and 7-14 days for
                       international orders.
@@ -317,11 +361,11 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq30" aria-expanded="false" aria-controls="faq30">
                       Do you offer international shipping?
                     </button>
                   </h2>
-                  <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div id="faq30" class="accordion-collapse collapse" data-bs-parent="#faqAccordion-r">
                     <div class="accordion-body">
                       Yes, we ship to most countries worldwide. Shipping costs and delivery times may vary
                       depending on the destination.
@@ -330,11 +374,11 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq40" aria-expanded="false" aria-controls="faq40">
                       How can I track my order?
                     </button>
                   </h2>
-                  <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div id="faq40" class="accordion-collapse collapse" data-bs-parent="#faqAccordion-r">
                     <div class="accordion-body">
                       Once your order ships, you'll receive a tracking number via email. You can use this
                       number to track your package on our website or the carrier's site.
@@ -389,7 +433,7 @@
     <div class="row">
       <div class="col-8">
         <img src="assets/Logo KSU-5.png" alt="" class="" height="80">
-        <p class="text-white fw-medium mt-2">
+        <p class="text-white fw-normal mt-2">
           Jalan Alternatif Cibubur Pasar Lama No. 74 Cileungsi, Bogor - Jawa Barat 16820 
         </p>
       </div>
@@ -419,9 +463,9 @@ crossorigin="anonymous"
 <!-- <script>
   // auto slider image, looping image
   window.addEventListener('DOMContentLoaded', () => {
-    const track = document.querySelector('.brand-track');
-    const clone = track.innerHTML;
-    track.innerHTML += clone; // Double the image list
+  const track = document.querySelector('.brand-track');
+  const clone = track.innerHTML;
+  track.innerHTML += clone; // Double the image list
   });
 </script> -->
 

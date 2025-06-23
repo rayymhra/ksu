@@ -79,6 +79,10 @@
     font-style: italic;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 
 body {
     font-family: 'Gotham', sans-serif;
@@ -190,3 +194,37 @@ footer {
 .brand-slider:hover .brand-track {
   animation-play-state: paused;
 }
+
+
+  /* Move buttons outside the carousel */
+  .custom-carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none; /* Allow clicks to pass through the container */
+  }
+
+.custom-carousel-controls .carousel-control-prev {
+  position: absolute;
+  left: -3rem;
+}
+
+.custom-carousel-controls .carousel-control-next {
+  position: absolute;
+  right: -3rem;
+}
+
+  .custom-carousel-controls button {
+    pointer-events: all; /* Reactivate clicks on the buttons */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    border: none;
+  }
+
+  .custom-carousel-controls .carousel-control-prev-icon,
+  .custom-carousel-controls .carousel-control-next-icon {
+    filter: invert(1); /* Makes sure icons are visible if on light background */
+  }
