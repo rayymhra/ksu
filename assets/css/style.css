@@ -228,3 +228,18 @@ footer {
   .custom-carousel-controls .carousel-control-next-icon {
     filter: invert(1); /* Makes sure icons are visible if on light background */
   }
+
+
+
+.about-hero-section {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+
+.group-photo-kami {
+    width: 97%;
+}
+
+.tentang-kami-section p {
+    text-align: justify;
+}
