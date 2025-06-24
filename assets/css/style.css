@@ -83,6 +83,16 @@
     scroll-behavior: smooth;
 }
 
+.btn-danger {
+    padding: 9px 14px;
+    border-radius: 13px;
+    background-color: #CB423F;
+}
+
+.text-danger {
+    color: #CB423F !important;
+}
+
 
 body {
     font-family: 'Gotham', sans-serif;
@@ -95,6 +105,7 @@ body {
 
 .nav-item {
     border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
     transition: border-color 0.3s ease;
     margin-right: 10px;
 }
@@ -107,6 +118,11 @@ body {
 
 .hero-section {
     background-color: #F7F0E7;
+    margin-top: 3.5rem !important;
+}
+
+.hero-section .container {
+    padding: 5rem 0;
 }
 
 .our-brand-section {
@@ -243,3 +259,7 @@ footer {
 .tentang-kami-section p {
     text-align: justify;
 }
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1010px ;
+    }
