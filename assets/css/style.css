@@ -135,7 +135,20 @@ body {
 
 .gallery-section {
     background-color: #F7F0E7;
+  cursor: pointer;
+
 }
+
+.gallery-img {
+  transition: all 0.3s ease;
+}
+
+.gallery-img:hover {
+  filter: brightness(50%);
+  transition: all 0.3s ease;
+
+}
+
 
 .faq-section .card-body {
     background-color: #F7F0E7;

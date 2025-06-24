@@ -229,26 +229,70 @@
     <div class="card">
       <div class="card-body">
         <div class="row g-4 p-3">
+          
           <div class="col-4">
-            <img src="assets/singkong-balado-100g.webp" alt="" class="w-100 border rounded-2">
+            <img src="assets/singkong-balado-100g.webp" 
+                 alt="Galeri Gambar"
+                 class="w-100 border rounded-2 gallery-img"
+                 data-bs-toggle="modal"
+                 data-bs-target="#imageModal"
+                 onclick="showImage(this.src)">
           </div>
           <div class="col-4">
-            <img src="assets/singkong-balado-100g.webp" alt="" class="w-100 border rounded-2">
+            <img src="assets/singkong-balado-100g.webp" 
+                 alt="Galeri Gambar"
+                 class="w-100 border rounded-2 gallery-img"
+                 data-bs-toggle="modal"
+                 data-bs-target="#imageModal"
+                 onclick="showImage(this.src)">
           </div>
           <div class="col-4">
-            <img src="assets/singkong-balado-100g.webp" alt="" class="w-100 border rounded-2">
+            <img src="assets/singkong-balado-100g.webp" 
+                 alt="Galeri Gambar"
+                 class="w-100 border rounded-2 gallery-img"
+                 data-bs-toggle="modal"
+                 data-bs-target="#imageModal"
+                 onclick="showImage(this.src)">
           </div>
           <div class="col-4">
-            <img src="assets/singkong-balado-100g.webp" alt="" class="w-100 border rounded-2">
+            <img src="assets/singkong-balado-100g.webp" 
+                 alt="Galeri Gambar"
+                 class="w-100 border rounded-2 gallery-img"
+                 data-bs-toggle="modal"
+                 data-bs-target="#imageModal"
+                 onclick="showImage(this.src)">
           </div>
           <div class="col-4">
-            <img src="assets/singkong-balado-100g.webp" alt="" class="w-100 border rounded-2">
+            <img src="assets/singkong-balado-100g.webp" 
+                 alt="Galeri Gambar"
+                 class="w-100 border rounded-2 gallery-img"
+                 data-bs-toggle="modal"
+                 data-bs-target="#imageModal"
+                 onclick="showImage(this.src)">
           </div>
           <div class="col-4">
-            <img src="assets/singkong-balado-100g.webp" alt="" class="w-100 border rounded-2">
+            <img src="assets/singkong-balado-100g.webp" 
+                 alt="Galeri Gambar"
+                 class="w-100 border rounded-2 gallery-img"
+                 data-bs-toggle="modal"
+                 data-bs-target="#imageModal"
+                 onclick="showImage(this.src)">
           </div>
+          
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal for gallery close up looks -->
+ <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body text-center p-0">
+        <img src="" id="modalImage" class="img-fluid rounded-3 shadow">
+      </div>
+      <button type="button" class="btn-close position-absolute top-0 end-0 m-3 bg-light p-3 rounded-pill" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
   </div>
 </div>
@@ -467,6 +511,14 @@ crossorigin="anonymous"
   track.innerHTML += clone; // Double the image list
   });
 </script> -->
+
+<!-- script for modal -->
+ <script>
+  function showImage(src) {
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = src;
+  }
+</script>
 
 </body>
 </html>
