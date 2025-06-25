@@ -116,6 +116,10 @@ body {
     text-shadow: 0 0 0.5px currentColor, 0 0 0.5px currentColor;
 }
 
+.actived {
+    text-shadow: 0 0 0.5px currentColor, 0 0 0.5px currentColor;
+}
+
 .hero-section {
     background-color: #F7F0E7;
     margin-top: 3.5rem !important;
