@@ -99,6 +99,8 @@ body {
     background-color: #FDFBFB !important;
 }
 
+
+/* NAVBAR */
 .navbar {
   background-color: white !important;
 }
@@ -131,7 +133,7 @@ body {
 }
 
 
-
+/* HERO SECTION */
 .hero-section {
     background-color: #F7F0E7;
     margin-top: 3.5rem !important;
@@ -141,13 +143,141 @@ body {
     padding: 5rem 0;
 }
 
-.our-brand-section {
-    background-color: #CB423F;
+@media (max-width: 767.98px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .hero-section img {
+    max-width: 80%;
+    height: auto;
+  }
 }
 
+
+/* OUR BRAND */
+.our-brand-section {
+  background-color: #CB423F;
+}
+
+.brand-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.brand-track {
+  display: flex;
+  animation: scrollBrands 30s linear infinite;
+  width: max-content;
+  align-items: center;
+}
+
+.brand-track img {
+  width: 200px;
+  margin: 0 30px;
+  flex-shrink: 0;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.brand-track img:hover {
+  transform: scale(1.05);
+}
+
+.brand-slider:hover .brand-track {
+  animation-play-state: paused;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .brand-track img {
+    width: 120px;
+    margin: 0 15px;
+  }
+
+  .our-brand-section h6 {
+    font-size: 1rem;
+  }
+
+  .our-brand-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-track img {
+    width: 100px;
+    margin: 0 10px;
+  }
+}
+
+@keyframes scrollBrands {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+
+
+
+/* FEATURED VIDEO */
+.featured-video-section video {
+  max-height: 360px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767.98px) {
+  .text-video {
+    padding: 0 1rem;
+  }
+
+  .text-video h3 {
+    font-size: 1.5rem;
+  }
+
+  .text-video p {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+/* PRODUK UNGGULAN */
 .produk-unggulan-section {
     background-color: #F7F0E7;
 }
+
+.card-img-top {
+  object-fit: cover;
+  height: 300px;
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 200px;
+  }
+
+  .produk-unggulan-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .produk-unggulan-section p {
+    font-size: 1rem;
+  }
+}
+
+
 
 .gallery-section {
     background-color: #F7F0E7;
@@ -204,41 +334,6 @@ footer {
     background-color: #CB423F;
 }
 
-
-/* auto slider for our brand section */
-.brand-slider {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.brand-track {
-  display: flex;
-  animation: scrollBrands 30s linear infinite;
-  width: max-content;
-}
-
-.brand-track img {
-  width: 200px;
-  margin: 0 30px;
-  flex-shrink: 0;
-  object-fit: contain;
-}
-
-/* Scrolling Keyframes (continuous scroll) */
-@keyframes scrollBrands {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-33.333%);
-  }
-}
-
-
-.brand-slider:hover .brand-track {
-  animation-play-state: paused;
-}
 
 
   /* Move buttons outside the carousel */
