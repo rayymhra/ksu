@@ -100,25 +100,37 @@ body {
 }
 
 .navbar {
-    background-color: white !important;
+  background-color: white !important;
 }
 
 .nav-item {
-    border-bottom: 3px solid transparent;
-    border-top: 3px solid transparent;
-    transition: border-color 0.3s ease;
-    margin-right: 10px;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  transition: border-color 0.3s ease;
+  margin-right: 10px;
 }
 
 .nav-item:hover {
-    border-bottom: #CB423F 3px solid;
-    /* font-weight: 600; */
-    text-shadow: 0 0 0.5px currentColor, 0 0 0.5px currentColor;
+  border-bottom: #CB423F 3px solid;
+  text-shadow: 0 0 0.5px currentColor, 0 0 0.5px currentColor;
 }
 
 .actived {
-    text-shadow: 0 0 0.5px currentColor, 0 0 0.5px currentColor;
+  text-shadow: 0 0 0.5px currentColor, 0 0 0.5px currentColor;
 }
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    padding-top: 10px;
+  }
+
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+
 
 .hero-section {
     background-color: #F7F0E7;
