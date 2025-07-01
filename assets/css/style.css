@@ -458,6 +458,16 @@ footer {
 
 
 
+/* PROMOTE ABOUT */
+@media (max-width: 767px) {
+  .promote-about-section img {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+
 .product-hero-section {
     margin-top: 7rem;
 }
