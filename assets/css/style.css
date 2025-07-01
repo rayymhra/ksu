@@ -422,6 +422,8 @@ footer {
 }
 
 
+
+/* WHY */
 .why-section i {
     font-size: 90px;
 }
@@ -446,6 +448,15 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (max-width: 767px) {
+    .why-section i {
+        font-size: 60px; /* Shrink icon size on smaller screens */
+    }
+}
+
+
+
 
 .product-hero-section {
     margin-top: 7rem;
