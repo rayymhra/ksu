@@ -519,7 +519,18 @@ footer {
 
 
 
-
+/* PROMOTE PRODUCTS */
 .promote-products-section {
     background-color: #F7F0E7;
+}
+
+/* Optional: Slight vertical spacing between text and button on small screens */
+@media (max-width: 576px) {
+    .promote-products-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .promote-products-section p {
+        font-size: 1rem;
+    }
 }
