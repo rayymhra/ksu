@@ -473,38 +473,52 @@ footer {
 }
 
 
+/* JASA DESAIN */
+.card-image-custom {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: var(--bs-card-border-radius);
+    border-top-right-radius: var(--bs-card-border-radius);
+}
+
+@media (max-width: 576px) {
+    .card-image-custom {
+        height: 255px;
+    }
+}
+
 .card-img-1 {
-    background-image: url('../konten\ medsos.png');
+    background-image: url('../konten%20medsos.png');
 }
 
 .card-img-2 {
-    background-image: url('../desain\ logo.png');
+    background-image: url('../desain%20logo.png');
 }
 
 .card-img-3 {
-    background-image: url('../desain\ kemasan\ produk.png');
+    background-image: url('../desain%20kemasan%20produk.png');
 }
 
 .card-img-4 {
     background-image: url('../branding.png');
 }
 
-.card-image-custom {
-    height: 300px;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-top-left-radius: var(--bs-card-border-radius);
-    border-top-right-radius: var(--bs-card-border-radius);
-    position: relative; 
-    overflow: hidden;
-}
-
 .text-bubble-overlay {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 1rem; 
-    border-radius: 0.5rem; 
+    padding: 1rem;
+    border-radius: 0.5rem;
+    max-width: 100%;
 }
+
+
+
+
+
+
+
+
 
 .promote-products-section {
     background-color: #F7F0E7;
