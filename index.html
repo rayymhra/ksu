@@ -50,26 +50,54 @@
   </div>
 </nav>
 
-
+<!-- 
+desktop hero img: 1920px and 700px
+tablet hero img: 1024px and 460px
+phone hero img: 360px and 510px
+-->
 <div class="hero-section">
-  <div class="container">
-    <div class="row align-items-center flex-column-reverse flex-md-row">
-      <!-- Text Content -->
-      <div class="col-md-6 text-center text-md-start">
-        <h3 class="text-danger">Keripik Saji Unggul</h3>
-        <h1>
-          a symbol of <br />
-          quality snacks
-        </h1>
-        <p class="mt-4 mb-4">Holding company since 2004</p>
-        <a href="#our-brand" class="btn btn-danger">Explore Our Brand</a>
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    
+    <div class="carousel-inner mx-auto">
+      <div class="carousel-item active">
+        <picture>
+          <source srcset="assets/mobile-hero-1.png" media="(max-width: 767px)">
+          <source srcset="assets/tablet-hero-1.png" media="(min-width: 768px) and (max-width: 1023px)">
+          <img src="assets/desktop-hero-1.png" class="d-block w-100" alt="Slide 1 Description">
+        </picture>
       </div>
       
-      <!-- Hero Image -->
-      <div class="col-md-6 mb-4 mb-md-0 text-center">
-        <img src="assets/home-hero.png" alt="Hero Image" class="img-fluid" />
+      <div class="carousel-item">
+        <picture>
+          <source srcset="assets/mobile-hero-2.png" media="(max-width: 767px)">
+          <source srcset="assets/tablet-hero-2.png" media="(min-width: 768px) and (max-width: 1023px)">
+          <img src="assets/desktop-hero-2.png" class="d-block w-100" alt="Slide 2 Description">
+        </picture>
       </div>
+      
+      <div class="carousel-item">
+        <picture>
+          <source srcset="assets/mobile-hero-3.png" media="(max-width: 767px)">
+          <source srcset="assets/tablet-hero-3.png" media="(min-width: 768px) and (max-width: 1023px)">
+          <img src="assets/desktop-hero-3.png" class="d-block w-100" alt="Slide 3 Description">
+        </picture>
+      </div>
+      
     </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </div>
 
@@ -176,42 +204,42 @@
         
         <!-- Slide 1 -->
         <div class="carousel-item active">
-  <div class="row justify-content-center g-4">
-    <div class="col-lg-5 col-md-6 col-12">
-      <div class="card rounded-4 h-100">
-        <div class="card-body">
-          <img src="assets/review.jpeg" alt="Review 1" class="w-100 border rounded">
+          <div class="row justify-content-center g-4">
+            <div class="col-lg-5 col-md-6 col-12">
+              <div class="card rounded-4 h-100">
+                <div class="card-body">
+                  <img src="assets/review.jpeg" alt="Review 1" class="w-100 border rounded">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12">
+              <div class="card rounded-4 h-100">
+                <div class="card-body">
+                  <img src="assets/review.jpeg" alt="Review 2" class="w-100 border rounded">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col-lg-5 col-md-6 col-12">
-      <div class="card rounded-4 h-100">
-        <div class="card-body">
-          <img src="assets/review.jpeg" alt="Review 2" class="w-100 border rounded">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
         
         <!-- Slide 2 -->
         <div class="carousel-item">
           <div class="row justify-content-center g-4">
-    <div class="col-lg-5 col-md-6 col-12">
-      <div class="card rounded-4 h-100">
-        <div class="card-body">
-          <img src="assets/review.jpeg" alt="Review 1" class="w-100 border rounded">
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-5 col-md-6 col-12">
-      <div class="card rounded-4 h-100">
-        <div class="card-body">
-          <img src="assets/review.jpeg" alt="Review 2" class="w-100 border rounded">
-        </div>
-      </div>
-    </div>
-  </div>
+            <div class="col-lg-5 col-md-6 col-12">
+              <div class="card rounded-4 h-100">
+                <div class="card-body">
+                  <img src="assets/review.jpeg" alt="Review 1" class="w-100 border rounded">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12">
+              <div class="card rounded-4 h-100">
+                <div class="card-body">
+                  <img src="assets/review.jpeg" alt="Review 2" class="w-100 border rounded">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         
       </div>
@@ -241,60 +269,60 @@
         <div class="row gx-2 gy-3 p-3">
           
           <div class="col-6 col-sm-6 col-md-4">
-      <img src="assets/singkong-balado-100g.webp" 
-           alt="Galeri Gambar"
-           class="w-100 border rounded-2 gallery-img"
-           data-bs-toggle="modal"
-           data-bs-target="#imageModal"
-           onclick="showImage(this.src)">
-    </div>
-
+            <img src="assets/singkong-balado-100g.webp" 
+            alt="Galeri Gambar"
+            class="w-100 border rounded-2 gallery-img"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+            onclick="showImage(this.src)">
+          </div>
+          
           <div class="col-6 col-sm-6 col-md-4">
-      <img src="assets/singkong-balado-100g.webp" 
-           alt="Galeri Gambar"
-           class="w-100 border rounded-2 gallery-img"
-           data-bs-toggle="modal"
-           data-bs-target="#imageModal"
-           onclick="showImage(this.src)">
-    </div>
-
+            <img src="assets/singkong-balado-100g.webp" 
+            alt="Galeri Gambar"
+            class="w-100 border rounded-2 gallery-img"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+            onclick="showImage(this.src)">
+          </div>
+          
           <div class="col-6 col-sm-6 col-md-4">
-      <img src="assets/singkong-balado-100g.webp" 
-           alt="Galeri Gambar"
-           class="w-100 border rounded-2 gallery-img"
-           data-bs-toggle="modal"
-           data-bs-target="#imageModal"
-           onclick="showImage(this.src)">
-    </div>
-
+            <img src="assets/singkong-balado-100g.webp" 
+            alt="Galeri Gambar"
+            class="w-100 border rounded-2 gallery-img"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+            onclick="showImage(this.src)">
+          </div>
+          
           <div class="col-6 col-sm-6 col-md-4">
-      <img src="assets/singkong-balado-100g.webp" 
-           alt="Galeri Gambar"
-           class="w-100 border rounded-2 gallery-img"
-           data-bs-toggle="modal"
-           data-bs-target="#imageModal"
-           onclick="showImage(this.src)">
-    </div>
-
+            <img src="assets/singkong-balado-100g.webp" 
+            alt="Galeri Gambar"
+            class="w-100 border rounded-2 gallery-img"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+            onclick="showImage(this.src)">
+          </div>
+          
           <div class="col-6 col-sm-6 col-md-4">
-      <img src="assets/singkong-balado-100g.webp" 
-           alt="Galeri Gambar"
-           class="w-100 border rounded-2 gallery-img"
-           data-bs-toggle="modal"
-           data-bs-target="#imageModal"
-           onclick="showImage(this.src)">
-    </div>
-
+            <img src="assets/singkong-balado-100g.webp" 
+            alt="Galeri Gambar"
+            class="w-100 border rounded-2 gallery-img"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+            onclick="showImage(this.src)">
+          </div>
+          
           <div class="col-6 col-sm-6 col-md-4">
-      <img src="assets/singkong-balado-100g.webp" 
-           alt="Galeri Gambar"
-           class="w-100 border rounded-2 gallery-img"
-           data-bs-toggle="modal"
-           data-bs-target="#imageModal"
-           onclick="showImage(this.src)">
-    </div>
-
-
+            <img src="assets/singkong-balado-100g.webp" 
+            alt="Galeri Gambar"
+            class="w-100 border rounded-2 gallery-img"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+            onclick="showImage(this.src)">
+          </div>
+          
+          
         </div>
       </div>
     </div>
@@ -320,7 +348,7 @@
     <h2 class="mb-5 fw-semibold">Pertanyaan yang sering diajukan (FAQ)</h2>
     <div class="row">
       <div class="col-12 col-md-6 mb-5">
-
+        
         <div class="card border-danger-subtle rounded-3">
           <div class="card-body rounded-3">
             <div class="text-center mt-3 mb-5">
@@ -387,7 +415,7 @@
         </div>
       </div>
       <div class="col-12 col-md-6 mb-5">
-
+        
         <div class="card border-danger-subtle rounded-3">
           <div class="card-body rounded-3">
             <div class="text-center mt-3 mb-5">
@@ -539,6 +567,8 @@ crossorigin="anonymous"
     modalImage.src = src;
   }
 </script>
+
+
 
 </body>
 </html>
