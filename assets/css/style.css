@@ -99,6 +99,10 @@ body {
     background-color: #FDFBFB !important;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 
 /* NAVBAR */
 .navbar {
@@ -342,7 +346,7 @@ body {
 
 /* FOOTER */
 footer {
-    background-color: #CB423F;
+    background-color: rgb(203, 66, 63);
 }
 
 
@@ -441,7 +445,7 @@ footer {
 }
 
 
-.why-section h4::after {
+/* .why-section h4::after {
     content: "";
     display: block;
     width: 40%; 
@@ -451,6 +455,15 @@ footer {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+} */
+
+.why-section .card {
+    transition: all ease 0.3s;
+}
+
+.why-section .card:hover {
+    box-shadow: 0 0 0 2px rgba(203, 66, 63, 1) !important;
+    transition: all ease 0.3s;
 }
 
 @media (max-width: 767px) {
