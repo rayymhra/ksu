@@ -429,6 +429,16 @@ footer {
     max-width: 1010px ;
 }
 
+.right-group-pict {
+    height: 213px;
+    object-fit: cover;
+}
+
+.left-group-pict {
+    height: 450px;
+    object-fit: cover;
+}
+
 
 
 /* WHY */
@@ -445,7 +455,7 @@ footer {
 }
 
 
-/* .why-section h4::after {
+.why-section h4::before {
     content: "";
     display: block;
     width: 40%; 
@@ -455,7 +465,7 @@ footer {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-} */
+}
 
 .why-section .card {
     transition: all ease 0.3s;
