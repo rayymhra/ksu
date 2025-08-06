@@ -321,15 +321,19 @@ body {
     background-color: transparent;
     box-shadow: none;
     border-bottom: #CB423F 2px solid;
-    font-weight: 500;
+    font-weight: 410;
 }
 
 .accordion-button{
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .accordion-button:hover {
     color: #CB423F;
+    
+}
+
+.accordion-body {
     
 }
 
